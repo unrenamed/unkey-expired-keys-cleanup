@@ -1,0 +1,25 @@
+{
+  "name": "unkey-expired-keys-cleanup",
+  "version": "1.0.0",
+  "description": "A TypeScript package for seeding and batch-deleting expired Unkey API keys",
+  "main": "dist/index.js",
+  "bin": {
+    "app": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev:seed": "ts-node src/seed.ts",
+    "dev:cleanup": "ts-node src/cleanup.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@supercharge/promise-pool": "^3.2.0",
+    "@types/cli-progress": "^3.11.6",
+    "@unkey/api": "^0.26.2",
+    "cli-progress": "^3.12.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.8"
+  }
+}
